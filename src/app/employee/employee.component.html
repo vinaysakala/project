@@ -1,0 +1,35 @@
+<app-navbar></app-navbar><br>
+
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-success" routerLink="/user" routerLinkActive="active">add Employee</button>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table table-bordered" id="crudTable">
+        <thead>
+            <th>employee_id</th>
+            <th>employee_name</th>
+            <th>Department</th>
+            <th>position</th>
+            <th>salary</th>
+                    
+            
+        </thead>
+        <tbody>
+    
+    
+            <tr *ngFor="let emp of employeeArray">
+                <td><span>{{emp.employeeId}}</span></td>
+                <td><span>{{emp.employeeName}}</span></td>
+                <td><span>{{emp.department}}</span></td>
+                <td><span>{{emp.position}}</span></td>
+                <td><span>{{emp.salary}}</span></td>
+                
+            </tr>
+        </tbody>
+    </table>
+      
+</div>
+

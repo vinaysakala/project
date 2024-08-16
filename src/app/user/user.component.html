@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<form >
+    <div class="container">
+        <div class="mb-5">
+           <div class="row">
+               <div class="form-group col-md-6 mb-3">
+                   <label>employee_id</label>
+                    <input type="text" placeholder="employee_id" class="form-control"  [ngModel]="employeeObj.employeeId" [ngModelOptions]="{standalone: true}">
+               </div>
+               <div class="form-group col-md-6 mb-3">
+                   <label>employee_name</label>
+                    <input type="text" placeholder="employee_name" class="form-control" [(ngModel)]="employeeObj.employeeName" [ngModelOptions]="{standalone: true}">
+               </div>
+               <div class="form-group col-md-6 mb-3">
+                   <label>Department</label>
+                    <input type="text" placeholder="Department" class="form-control" [(ngModel)]="employeeObj.department"[ngModelOptions]="{standalone: true}">
+               </div>
+               <div class="form-group col-md-6 mb-3">
+                   <label>salary</label>
+                    <input type="number" placeholder="salary" class="form-control"  [(ngModel)]="employeeObj.salary" [ngModelOptions]="{standalone: true}">
+               </div>
+               <div class="form-group col-md-6 mb-3">
+                   <label>position</label>
+                    <input type="text" placeholder="position" class="form-control" [(ngModel)]="employeeObj.position" [ngModelOptions]="{standalone: true}">
+               </div>
+               <div class="col-lg-12 mt-5">
+                   <button class="btn btn-success" id="submit" (click)="addEmployee()">register</button>&nbsp;
+                   
+               </div>
+               
+           </div>    
+   </div>
+</div>
+</form>

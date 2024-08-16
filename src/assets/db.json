@@ -1,0 +1,18 @@
+{
+    "employee": [
+        {
+            "employeeid": "1234",
+            "employeename": "vinay gupta",
+            "department": "developer",
+            "position": "intern",
+            "salary": 23000
+        },
+        {
+            "employeeid": "12232",
+            "employeename": "sai durga",
+            "department": "testing",
+            "position": "team lead",
+            "salary": 230000
+        }
+    ]
+}
